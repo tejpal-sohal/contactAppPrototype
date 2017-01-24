@@ -1,0 +1,35 @@
+{
+  "name": "contactApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "preInstall" : "sudo npm install -g protractor",
+    "postInstall": "./node_modules/protractor/bin/webdriver-manager update",
+    "unitTests": "karma start karma.conf.js",
+    "start": "live-server",
+    "startWebDriver": "webdriver-manager start",
+    "userTesting": "cd end2endTests && protractor conf.js",
+    "prodBuild": "gulp prod"
+  },
+  "author": "TejSohal",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.1",
+    "angular-mocks": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "protractor": "^5.0.0",
+    "webdriver-manager": "^11.1.1"
+  }
+}

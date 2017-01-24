@@ -1,0 +1,18 @@
+The Project
+Create a simple Contacts application that shows a list of contacts, showing their full name, email and profile photo. The user should have the ability to click on each contact to see more granular details. The user should also have the ability to add new contacts.
+The initial load of contacts should be retrieved from this API: http://www.mocky.io/v2/5807df4a10000004122b74e2
+
+Specifications
+●	Your application is to be presented as a github repository; *
+●	You must build your application to be responsive using SCSS *
+●	Document how to run your application; *
+●	Document how to run your tests; *
+●	API failures should be handled gracefully; *
+●	Your application architecture should be built to be maintainable and allow future extension. *
+
+Technical Requirements
+●	Essential: Use of Angular 1.5 or 1.6
+●	Essential: Examples of Unit Tests and End to End tests
+●	Essential: Use of component architecture
+
+

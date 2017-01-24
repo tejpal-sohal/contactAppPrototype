@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>ContactApp</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <base href="/" />
+    <!-- build:css-->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+
+    <!-- build:js-->
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="services/mocky.js"></script>
+    <script src="controllers/personCtrl.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body>
+    <div class="container" ng-controller="personCtrl">
+        <div class="row">
+            <div class="col-sm-4 side">
+                <h1 id="menuTitle">Contacts</h1>
+                <ul>
+                    <li ng-repeat="i in contacts">
+                        <a href="/person/{{i.name}}">{{i.name}}</a>
+                    </li>
+                </ul>
+                <div class="hidden-xs">
+                <h1 id="addUser">Add User</h1>
+                <form ng-class="{'submitted': submitted}" ng-submit="save()">
+                    <div class="form-group">
+                        <input id="name" type="name" class="form-control" placeholder="name" ng-model="name" required/>
+                        <input id="email" type="email" class="form-control" placeholder="email" ng-model="email" required/>
+                        <input id="job" type="text" class="form-control" placeholder="job" ng-model="job" required/>
+                        <input id="location" type="text" class="form-control" placeholder="location" ng-model="location" required/>
+                        <input id="tag" type="text" class="form-control" placeholder="tag" ng-model="tag" required/>
+                        <input id="avatar" type="text" class="form-control" placeholder="avatar" ng-model="avatar" required/>
+                    </div>
+                    <button id="save" ng-click="submitted=true;"  class="btn btn-success">add</button>
+                </form>
+            </div>
+            </div>
+            <div class="col-sm-8 detail">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

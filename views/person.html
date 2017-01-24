@@ -1,0 +1,15 @@
+<div class="person text-center">
+<h1 class="hidden-sm hidden-md hidden-lg hidden-lg">{{name}}</h1>
+<img id="personAvatar" class="thumbnail center-block img-responsive" src="{{avatar}}" alt="Description"/>
+
+<h1 id="personName" class="hidden-xs">{{name}}</h1>
+    <h4 id="personEmail" >{{email}}</h4>
+    <button id="BtnMoreInfo" class="btn btn-primary" ng-click="toggle()">More Info</button>
+    <div ng-show="moreDetails" class="wrapper">
+                <div class="col-sm-12">
+                        <h3 id="job"><strong>Job</strong>: {{job}}</h3>
+                        <h3 id="location" ><strong>Location</strong>: {{location}}</h3>
+                        <h3 id="tag" ><strong>Tag</strong>: {{tag}}</h3>
+                </div>
+    </div>
+</div>
