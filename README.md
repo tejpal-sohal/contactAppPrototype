@@ -5,7 +5,7 @@ Create a simple Contacts application that shows a list of contacts, showing thei
 The initial load of contacts should be retrieved from a API.
 
 ## Installation
-Download the file and please refer to the doc dir to setup up the project.
+Download the repo and please refer to the doc dir to setup up the project.
 
 ## About the Application
 
